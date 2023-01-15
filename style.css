@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
 }
 
 .page-sizing {
     background-color: #1F2937;
 }
 
+.on-top {
+    display: block;
+    position: fixed;
+    background-color: #1F2937;
+    width: 100%;
+}
 
 /* body {
     padding: 16px;
@@ -41,29 +50,31 @@ nav {
 ul{
     list-style-type: none;
     justify-content: space-around;
+    gap: 50px;
 }
 
 a {
     text-decoration: none;
     font-size: 18px;
+    color: #f9faf8;
 }
 
 header {
     width: 80%;
-    padding: 1em;
+    padding: 5px;
     margin: 0 auto;
     color: #f9faf8;
 }
 
 /* link behaviors start */
-a:visited {
+li a:visited {
     color: #e5e7eb;
 }
-a:hover,
-a:focus {
+li a:hover,
+li a:focus {
     color: #aaf8f8;
 }
-a:active {
+li a:active {
     color: #e5e7eb;
 }
 /* link behaviors end */
@@ -72,7 +83,7 @@ a:active {
 /* intro layout start */
 
 #intro {
-    padding-top: 30px;
+    padding: 80px 0 50px;
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -82,7 +93,7 @@ a:active {
 
 .left-description {
     padding: 1em;
-    width: 450px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -91,7 +102,7 @@ a:active {
 .left-description h1 {
     font-size: 48px;
     font-weight: bolder;
-    margin: 0 0 1rem;
+    margin: 0 0 3rem;
     color: #f9faf8;
 }
 
@@ -111,6 +122,15 @@ button {
  
 button a {
     color:whitesmoke;
+}
+
+button a:visited {
+    color:#f9faf8;
+}
+
+button:hover,
+button:focus {
+    filter: brightness(80%);
 }
 
 
@@ -133,18 +153,19 @@ button a {
 
 /* information layout start */
 
-.page-sizing-2 {
-    padding: 16px 0 32px ;
-}
+/* .page-sizing-2 {
+    padding: 32px 0;
+} */
 
 #info {
+    padding: 70px 0;
     width: 80%;
     margin: auto;
 }
 
 #info h2 {
     text-align: center;
-    margin: 16px auto;
+    margin: 0 auto;
 }
 
 .info-div {
@@ -164,13 +185,16 @@ button a {
     align-items: center;
     text-align: center;
     width: 200px;
-    height: 300px;
+    height: 350px;
+    gap: 10px;
 }
 
 .info-div img {
     background-color: rgb(232, 232, 232);
-    border-radius: 30%;
-    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #aaf8f8;
+    object-fit: cover;
+    width: 170px;
     height: 170px;
     margin: 10px;
 }
@@ -178,6 +202,7 @@ button a {
 .info-div h3 {
     flex: 1 0 auto;
     align-self:center;
+    height: 50px;
 }
 
 /* information layout end */
@@ -190,12 +215,21 @@ button a {
 }
 
 #testimonial {
+    padding: 50px;
     width: 80%;
     margin: auto;
 }
 
 #testimonial p {
-    font-size: 36px;
+    font-size: 2rem;
+    font-style: italic;
+    color: #1F2937;
+}
+
+#testimonial p:nth-child(2) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
     color: #1F2937;
 }
 
@@ -216,8 +250,6 @@ button a {
 }
 
 .quote-block a img:hover {
-    width: 305px;
-    height: 305px;
     color: #767676;
     filter: brightness(90%);
     box-shadow: 10px 10px 10px 5px gainsboro, 
@@ -231,4 +263,59 @@ button a {
     gap: 1rem;
     text-align: center;
     width: 60%;
+}
+/* testimonial layout end */
+
+/* call to action start */
+
+#call-to-action {
+    padding: 60px;
+    width: 80%;
+    margin: auto;
+}
+
+.call-block {
+    border: 1px solid #3882f6;
+    border-radius: 1rem;
+    background-color: #3882f6;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    min-width: 300px;
+    
+}
+
+.call-block div:first-of-type {
+    width: 300px;
+    flex: 1;
+}
+
+.call-block h2 {
+    font-size: 1.5em;
+    color:#f9faf8
+}
+
+.call-block p {
+    font-size: 1em;
+    color:#f9faf8
+}
+/* call to action start */
+
+/* footer layout start */
+
+.page-sizing:last-of-type {
+    height: 40px;
+    padding: 10px;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+footer p {
+    font-size: 1em;
+    color:#f9faf8
 }
