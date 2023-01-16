@@ -96,7 +96,7 @@ li a:active {
     width: 600px;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: justify;
 }
 
 .left-description h1 {
@@ -168,6 +168,13 @@ button:focus {
     margin: 0 auto;
 }
 
+.line {
+    margin: 5px auto 0;
+    border: 1px solid #1F2937;
+    background-color: #1F2937;
+    width: 30%; 
+}
+
 .info-div {
     padding: 1em;
     display: flex;
@@ -203,6 +210,12 @@ button:focus {
     flex: 1 0 auto;
     align-self:center;
     height: 50px;
+}
+
+.info-div p {
+    flex: 1 0 auto;
+    text-align: left;
+    font-size: 0.9em;
 }
 
 /* information layout end */
@@ -303,6 +316,34 @@ button:focus {
 }
 /* call to action start */
 
+/* gallery layout start */
+
+#gallery {
+    width: 80%;
+    padding: 80px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 700px;
+    margin: 0 auto;
+    overflow:auto;
+}
+
+#gallery img {
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+    flex: 1;
+}
+
+
+
+
+
+/* gallery layout end */
+
 /* footer layout start */
 
 .page-sizing:last-of-type {
@@ -319,3 +360,5 @@ footer p {
     font-size: 1em;
     color:#f9faf8
 }
+
+/* footer layout end */
